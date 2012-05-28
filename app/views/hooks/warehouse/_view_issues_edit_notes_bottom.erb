@@ -1,0 +1,6 @@
+Ресурсы
+<br>
+<ul>
+  <%= render :partial => 'edit_assigned_stored_item', :collection => IssueStoredItemAssignment.find_all_by_issue_id(@issue.id) %>
+</ul>
+<%= link_to l(:label_add_stored_item_to_issue), add_to_issue_stored_items_path(:issue_id=>issue.id) %>

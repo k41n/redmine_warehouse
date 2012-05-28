@@ -1,0 +1,17 @@
+<div class="contextual">
+  <%= link_to(l(:label_stored_item_new), {:controller => 'stored_items', :action => 'new', :project_id => @project.id}, :class => 'icon icon-add') if User.current.allowed_to?(:manage_warehouse, @project) %>
+</div>
+<h2>Склад</h2>
+<table class="list issues">
+  <thead><tr>
+    <th><%=l(:field_name)%></th>
+    <th><%=l(:field_qty)%></th>
+    <th><%=l(:field_price)%></th>
+    <th><%=l(:actions)%></th>
+  </tr></thead>
+  <tbody>
+  <%=  render StoredItem.all %>
+  </tbody>
+</table>
+
+

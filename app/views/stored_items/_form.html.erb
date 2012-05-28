@@ -1,0 +1,10 @@
+<%= error_messages_for 'stored_item' %>
+
+<div class="box tabular">
+  <!--[form:project]-->
+  <%=  hidden_field_tag :project_id, @project.id %>
+  <p><%= f.text_field :name, :required => true, :size => 60 %></p>
+  <p><%= f.text_field :qty, :required => true, :size => 60 %></p>
+  <p><%= f.text_field :price, :required => true, :size => 60 %></p>
+</div>
+

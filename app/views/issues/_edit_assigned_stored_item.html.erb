@@ -1,0 +1,4 @@
+<li>
+  <%= link_to edit_assigned_stored_item.stored_item.name, stored_item_path(edit_assigned_stored_item.stored_item) %>
+  <%= link_to l(:stored_item_assignment_delete), issue_stored_item_assignment_path(edit_assigned_stored_item), :method => :delete %>
+</li>

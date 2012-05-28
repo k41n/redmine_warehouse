@@ -1,0 +1,14 @@
+# English strings go here for Rails i18n
+en:
+  permission_observe_warehouse: Ovserve warehouse
+  permission_manage_warehouse: Manage warehouse
+  label_stored_item_new: New entry
+  field_qty: Quantity
+  field_price: Price
+  actions: Actions
+  stored_item_delete: Delete entry
+  label_stored_item_edit: Update entry
+  label_add_stored_item_to_issue: Add resource from storehouse
+  choose_item: Choose entry
+  label_related_stored_items: Assigned resources
+  stored_item_assignment_delete: Unassign from issue

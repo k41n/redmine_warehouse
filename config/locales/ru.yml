@@ -1,0 +1,13 @@
+ru:
+  permission_observe_warehouse: Видеть склад
+  permission_manage_warehouse: Управлять складом
+  label_stored_item_new: Новая позиция
+  field_qty: Количество
+  field_price: Цена
+  actions: Действия
+  stored_item_delete: Удалить позицию
+  label_stored_item_edit: Обновить позицию
+  label_add_stored_item_to_issue: Добавить ресурс со склада
+  choose_item: Выберите позицию
+  label_related_stored_items: Связанные ресурсы
+  stored_item_assignment_delete: Удалить связь с задачей

@@ -1,0 +1,11 @@
+<tr id="stored-item-<%= h(stored_item.id) %>" class="<%= cycle('odd', 'even') %>">
+
+  <td class="subject">
+    <%= link_to h(truncate(stored_item.name, :length => 60)), :controller => 'stored_items', :action => 'edit', :id => stored_item, :project_id => @project.id %>
+  </td>
+  <td class="hours"><%= stored_item.qty %></td>
+  <td class="hours"><%=h stored_item.price %></td>
+  <td class="hours">
+    <%= link_to l(:stored_item_delete), stored_item_path(stored_item), :method => :delete %>
+  </td>
+</tr>

@@ -1,0 +1,10 @@
+<% if StoredItem.all.empty? %>
+    <p class="nodata"><%= l(:label_no_data) %></p>
+<% else %>
+    <% form_for @issue_assignment do |f| %>
+        <%= f.hidden_field :issue_id, :value => @issue.id %>
+        <%= f.label :stored_item_id, l(:choose_item) %>
+        <p><%= f.collection_select :stored_item_id, StoredItem.all, :id, :name %></p>
+        <%= submit_tag l(:button_create) %>
+    <% end %>
+<% end %>
